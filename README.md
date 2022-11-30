@@ -1,2 +1,3 @@
-An extensive Python API for Metal Archives database. <br>
-Inspired by [pymetal](https://github.com/OpenJarbas/pymetal), [metalarchives](https://github.com/Loki-Afro/metalarchives) and [python-metallum](https://github.com/lcharlick/python-metallum).
+An extensive Python API for Metal Archives database.<br>
+Inspired by [pymetal](https://github.com/OpenJarbas/pymetal), [metalarchives](https://github.com/Loki-Afro/metalarchives) and [python-metallum](https://github.com/lcharlick/python-metallum).<br>
+Most Python-based Metal Archives APIs that I've seen were either over-engineered or lacking, usually with a badly structured codebase. Thus this project was born.

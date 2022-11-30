@@ -1,0 +1,2 @@
+class Bands:
+    pass
