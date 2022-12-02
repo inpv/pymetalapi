@@ -30,4 +30,5 @@ class Locators:
         "status": ['text', 'dl.float_left > dd:nth-child(6)'],
         "formed": ['text', 'dl.float_left > dd:nth-child(8)'],
         "years": ['text', 'dl.clear > dd:nth-child(2)'],
+        "band_comment": ['text', '.band_comment']
     }

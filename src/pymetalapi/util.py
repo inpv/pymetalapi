@@ -4,7 +4,7 @@ from random_user_agent.params import SoftwareName, OperatingSystem
 
 def get_element(tree, sel_type, sel: str):
     if sel_type == 'text':
-        return [element.text for element in tree.cssselect(sel)]
+        return [element.text_content() for element in tree.cssselect(sel)]
     elif sel_type == 'href':
         return [element.get('href') for element in tree.cssselect(sel)]
 
