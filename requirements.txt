@@ -1,3 +1,4 @@
 lxml>=4.9.1
 random_user_agent>=1.0.1
 requests_cache>=0.9.7
+cssselect>=1.2.0

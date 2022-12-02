@@ -18,3 +18,16 @@ class Locators:
               "pagan", "gothic", "grindcore", "groove", "heavy", "metalcore",
               "deathcore", "power", "progressive", "speed", "symphonic",
               "thrash"]
+
+    band_dict = {
+        "name": ['text', 'h1.band_name > a:nth-child(1)'],
+        "url": ['href', 'h1.band_name > a:nth-child(1)'],
+        "genre": ['text', 'dl.float_right > dd:nth-child(2)'],
+        "themes": ['text', 'dl.float_right > dd:nth-child(4)'],
+        "label": ['text', 'dl.float_right > dd:nth-child(6) > a:nth-child(1)'],
+        "country": ['text', 'dl.float_left > dd:nth-child(2) > a:nth-child(1)'],
+        "location": ['text', 'dl.float_left > dd:nth-child(4)'],
+        "status": ['text', 'dl.float_left > dd:nth-child(6)'],
+        "formed": ['text', 'dl.float_left > dd:nth-child(8)'],
+        "years": ['text', 'dl.clear > dd:nth-child(2)'],
+    }
