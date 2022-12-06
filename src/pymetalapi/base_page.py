@@ -1,5 +1,6 @@
 import requests_cache
 from lxml import html
+from datetime import timedelta
 from pymetalapi.config import Config
 from pymetalapi.util import get_random_user_agent
 from requests_cache import remove_expired_responses
@@ -8,10 +9,11 @@ from requests_cache import remove_expired_responses
 class BasePage:
 
     def __init__(self, url):
-        requests_cache.install_cache(cache_name=Config.CACHE_FILE, expire_after=300)
+        requests_cache.install_cache(cache_name=Config.CACHE_FILE, expire_after=timedelta(hours=1))
         remove_expired_responses()
 
-        self.session = requests_cache.CachedSession(cache_name=Config.CACHE_FILE)
+        self.session = requests_cache.CachedSession(backend='memory',
+                                                    expire_after=timedelta(hours=1))
         self.session.headers = {
             'User-Agent': get_random_user_agent(),
         }
