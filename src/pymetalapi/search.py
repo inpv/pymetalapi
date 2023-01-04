@@ -4,6 +4,7 @@ from pymetalapi.config import Config
 
 
 class Search:
+    # TODO: link these methods to FASTAPI queries, with Uvicorn simulating the server responses
 
     @staticmethod
     def search_random_band():

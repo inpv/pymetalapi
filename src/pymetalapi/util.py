@@ -1,3 +1,4 @@
+import json
 from random_user_agent.user_agent import UserAgent
 from random_user_agent.params import SoftwareName, OperatingSystem
 
@@ -7,6 +8,10 @@ def get_element(tree, sel_type, sel: str):
         return [element.text_content() for element in tree.cssselect(sel)]
     elif sel_type == 'href':
         return [element.get('href') for element in tree.cssselect(sel)]
+
+
+def serialize_response(dictionary):
+    return json.dumps(dictionary, indent=4)
 
 
 def get_random_user_agent():
